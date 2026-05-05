@@ -1,7 +1,186 @@
 @import "tailwindcss";
 
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: #151312;
+}
+
+[data-reveal] {
+    opacity: 0;
+    transform: translateY(32px);
+    transition: opacity 700ms ease, transform 700ms ease;
+    will-change: opacity, transform;
+    scroll-margin-top: 110px;
+}
+
+[data-reveal].is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    [data-reveal] {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}
+
+.page-hidden {
+    visibility: hidden;
+}
+
+.page-ready .intro-card {
+    animation: introFadeUp 700ms ease both;
+}
+
+.page-ready .intro-image {
+    animation: introScale 850ms ease both;
+}
+
+.page-ready .intro-copy {
+    animation: introFadeUp 700ms ease 120ms both;
+}
+
+.page-ready .intro-socials {
+    animation: introFadeUp 700ms ease 240ms both;
+}
+
+.page-ready .intro-hero {
+    animation: introFadeUp 800ms ease 160ms both;
+}
+
+@keyframes introFadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(28px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes introScale {
+    from {
+        opacity: 0;
+        transform: scale(0.96);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Certifications modal */
+.cert-modal {
+    position: fixed;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    background: rgba(0,0,0,0.75);
+    z-index: 1100;
+    padding: 2rem;
+}
+
+.cert-modal-dialog {
+    width: 100%;
+    max-width: 960px;
+    background: #0f0e0e;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+}
+
+.cert-modal-close {
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 1.6rem;
+    float: right;
+}
+
+.cert-modal-body {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cert-modal-image {
+    width: 100%;
+    max-height: 60vh;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.cert-modal-text {
+    color: #e6e6e6;
+    margin-top: 0.75rem;
+}
+
+@media(min-width:900px){
+    .cert-modal-body{
+        flex-direction: row;
+    }
+
+    .cert-modal-image{ max-width: 55%; }
+    .cert-modal-text{ max-width: 45%; }
+}
+
+.loader-overlay {
+        position: fixed;
+        inset: 0;
+        z-index: 1000;
+        display: grid;
+        place-items: center;
+        background: rgba(21, 19, 18, 0.96);
+        backdrop-filter: blur(10px);
+}
+
+.loader-panel {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+}
+
+.loader-name {
+        color: #ffffff;
+        font-size: 1.5rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+}
+
+.loader {
+    width: 56px;
+    aspect-ratio: 1;
+    --_c:no-repeat linear-gradient(orange 0 0) 50%;
+    background:
+        var(--_c)/100% 50%,
+        var(--_c)/50% 100%;
+    border-radius: 50%;
+    animation: l29 1.4s infinite linear;
+}
+
+@keyframes l29 {
+    100% {transform: rotate(1turn)}
+}
+
+@media (prefers-reduced-motion: reduce) {
+        .loader {
+                animation: none;
+        }
 }
 .navbar{
     background-color: #1c1a19;

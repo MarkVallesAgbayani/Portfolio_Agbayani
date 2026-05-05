@@ -5,21 +5,27 @@ type ImageProfileProps ={
         image: string;
         tag: string;
 }
+
 function ImageProfile({name, image, tag}: ImageProfileProps) {
     return (
-        <div className="bg-white w-90 flex flex-col mx-auto my-7 p-5 rounded-2xl font-sans">
-            <div className="w-70 flex mx-auto">
-                <img className="rounded-2xl" src={image} alt="profile" />
+        <div className="intro-card mx-auto my-8 flex w-full max-w-sm flex-col rounded-3xl bg-white p-4 font-sans shadow-lg sm:max-w-md sm:p-6 lg:max-w-lg">
+            <div className="intro-image mx-auto flex w-full max-w-xs justify-center sm:max-w-sm">
+                <img 
+                    className="w-full rounded-2xl transition-all duration-450 hover:scale-105" 
+                    src={image} 
+                    alt="profile" 
+                />
             </div>
-            <div className="text-center flex flex-col gap-3 mt-5">
-                <h1 className="text-black text-4xl font-bold tracking-wide" >{name}</h1>
-                <p className="font-semibold text-zinc-500 tracking-wide w-80 text-md">{tag}</p>
+            <div className="intro-copy mt-5 flex flex-col gap-3 text-center">
+                <h1 className="text-3xl font-bold tracking-wide text-black sm:text-4xl" >{name}</h1>
+                <p className="mx-auto max-w-xs text-sm font-semibold tracking-wide text-zinc-500 sm:max-w-sm sm:text-base">{tag}</p>
             </div>
-            <div className="flex gap-5 justify-center items-center p-5">
+            <div className="intro-socials flex flex-wrap items-center justify-center gap-5 p-5">
                 <a
                     href='https://www.linkedin.com/in/mark-lui-agbayani-238292324/'
                     target='_blank'
-                    className='cursor-pointer'
+                    rel="noreferrer"
+                    className='cursor-pointer hover:scale-105 transition-all duration-300'
                 >
                     <LinkedinLogoIcon size={32} color="#f46c38"/>
                 </a>
@@ -27,7 +33,8 @@ function ImageProfile({name, image, tag}: ImageProfileProps) {
                 <a
                     href='https://github.com/MarkVallesAgbayani'
                     target='_blank'
-                    className='cursor-pointer'
+                    rel="noreferrer"
+                    className='cursor-pointer hover:scale-105 transition-all duration-300'
                 >
                     <GithubLogoIcon size={32} color="#f46c38" />
                 </a>
@@ -35,7 +42,8 @@ function ImageProfile({name, image, tag}: ImageProfileProps) {
                 <a
                     href='https://www.facebook.com/Mak.Agbayani12/'
                     target='_blank'
-                    className='cursor-pointer'
+                    rel="noreferrer"
+                    className='cursor-pointer hover:scale-105 transition-all duration-300'
                 >
                     <MetaLogoIcon size={32} color="#f46c38" />
                 </a>
@@ -43,7 +51,8 @@ function ImageProfile({name, image, tag}: ImageProfileProps) {
                 <a
                     href='https://www.instagram.com/mrkcellus19'
                     target='_blank'
-                    className='cursor-pointer'
+                    rel="noreferrer"
+                    className='cursor-pointer hover:scale-105 transition-all duration-300'
                 >
                     <InstagramLogoIcon size={32} color="#f46c38" />
                 </a>

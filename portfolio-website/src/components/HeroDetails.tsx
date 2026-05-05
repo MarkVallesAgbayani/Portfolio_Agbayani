@@ -1,8 +1,8 @@
 function HeroDetails (){
     return (
-        <div className="flex flex-col mx-auto text-center">
-            <h2 className="text-white uppercase font-bold text-5xl">Full-Stack</h2><p className="text-zinc-800 uppercase font-bold text-5xl">Developer</p>
-            <p className="text-neutral-500 tracking-wide w-95 text-center mx-auto mt-4">Passionate about creating intuitive and engaging user experiences. 
+        <div className="intro-hero mx-auto flex w-full max-w-4xl flex-col px-1 text-center sm:px-4">
+            <h2 className="text-4xl font-bold uppercase text-white sm:text-5xl md:text-6xl">Full-Stack</h2><p className="text-4xl font-bold uppercase text-zinc-800 sm:text-5xl md:text-6xl">Developer</p>
+            <p className="mx-auto mt-4 max-w-xl text-sm tracking-wide text-neutral-500 sm:text-base">Passionate about creating intuitive and engaging user experiences. 
             Specialize in transforming ideas into beautifully crafted products.</p>
         </div>
     )
