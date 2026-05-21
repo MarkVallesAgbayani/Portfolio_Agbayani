@@ -1,5 +1,7 @@
 import { ArrowLineUpRightIcon } from "@phosphor-icons/react";
 import AitoManabiImage from "/src/assets/aitomanabi.png";
+import Zento from "/src/assets/aitomanabi.png";
+import Portfolio from "/src/assets/portfolio.png";
 
 function Projects() {
   type ProjectType = {
@@ -23,7 +25,7 @@ function Projects() {
       title: "Zento: E-Commerce Product Listing",
       description:
         "Built a responsive e-commerce product listing platform with dynamic product displays, category filtering, search functionality, and clean UI/UX design. Focused on creating a fast and user-friendly shopping experience using modern frontend technologies and reusable components.",
-      image: "/src/assets/zento.png",
+      image: Zento,
       link: "https://zento-ecommerce.markagbayanipersonal19.workers.dev/",
     },
     {
@@ -31,7 +33,7 @@ function Projects() {
       title: "Personal Portfolio Website",
       description:
         "Designed and developed a responsive personal portfolio website to showcase projects, technical skills, and development experience. Includes modern UI animations, project highlights, contact sections, and optimized layouts for desktop and mobile devices.",
-      image: "/src/assets/portfolio.png",
+      image: Portfolio,
       link: "https://aitomanabi.com/",
     },
   ];
