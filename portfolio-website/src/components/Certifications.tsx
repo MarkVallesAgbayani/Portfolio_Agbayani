@@ -1,9 +1,14 @@
 import { useState } from "react";
 
 function Certifications() {
-  const [activeAward, setActiveAward] = useState(null);
-
-  const awards = [
+  type Award = {
+    id: number;
+    img: string;
+    title: string;
+    desc: string;
+  };
+  const [activeAward, setActiveAward] = useState<Award | null>(null);
+  const awards: Award[] = [
     {
       id: 1,
       img: "./src/assets/Best Lead Programmer.jpg",
