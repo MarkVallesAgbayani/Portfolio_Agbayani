@@ -13,7 +13,7 @@ import Experience from "./pages/Experience";
 import Tool from "./pages/Tool";
 import WorkTogether from "./components/WorkTogether";
 import Certifications from "./components/Certifications";
-
+import Deployment from "./pages/Deployment";
 function RouteScroller() {
   const { pathname } = useLocation();
 
@@ -60,6 +60,9 @@ function App() {
       </section>
       <section id="tools" className="scroll-mt-28">
         <Tool />
+      </section>
+      <section id="tools" className="scroll-mt-28">
+        <Deployment />
       </section>
       <section className="scroll-mt-28">
         <Certifications />
