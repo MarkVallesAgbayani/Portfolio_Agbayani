@@ -1,6 +1,6 @@
 import { ArrowLineUpRightIcon } from "@phosphor-icons/react";
 import AitoManabiImage from "/src/assets/aitomanabi.png";
-import Zento from "/src/assets/aitomanabi.png";
+import Zento from "/src/assets/zento.png";
 import Portfolio from "/src/assets/portfolio.png";
 
 function Projects() {
