@@ -9,23 +9,27 @@ function Projects() {
     description: string;
     image: string;
     link: string;
+    stack: string;
   };
   const projects: ProjectType[] = [
     {
       id: 1,
-      title: "AiToManabi (Thesis Project)",
-      description:
-        "Developed an AI-driven Japanese language learning platform featuring conversational AI, speech recognition (STT), text-to-speech (TTS), pronunciation feedback, and interactive lesson modules. Built to simulate real-time tutoring experiences for beginner-level Japanese learners (JLPT N5) using modern web technologies and AI integration.",
-      image: AitoManabiImage,
-      link: "https://aitomanabi.com/",
-    },
-    {
-      id: 2,
       title: "Zento: E-Commerce Product Listing",
       description:
         "Built a responsive e-commerce product listing platform with dynamic product displays, category filtering, search functionality, and clean UI/UX design. Focused on creating a fast and user-friendly shopping experience using modern frontend technologies and reusable components.",
       image: Zento,
       link: "https://zento-ecommerce.markagbayanipersonal19.workers.dev/",
+      stack: "React, TypeScript, Vite, Tailwind CSS, API",
+    },
+    {
+      id: 2,
+      title: "AiToManabi (Thesis Project)",
+      description:
+        "Developed an AI-driven Japanese language learning platform featuring conversational AI, speech recognition (STT), text-to-speech (TTS), pronunciation feedback, and interactive lesson modules. Built to simulate real-time tutoring experiences for beginner-level Japanese learners (JLPT N5) using modern web technologies and AI integration.",
+      image: AitoManabiImage,
+      link: "https://aitomanabi.com/",
+      stack:
+        "PHP, Python, JavaScript, Tailwind CSS,  MySQL, LLaMA 3.1 8B (AI Model)",
     },
   ];
   return (
@@ -55,6 +59,10 @@ function Projects() {
               </p>
               <p className="text-sm text-neutral-500 sm:text-base">
                 {project.description}
+              </p>
+
+              <p className="text-sm text-neutral-500 sm:text-base mt-10">
+                Tech Stack: {project.stack}
               </p>
             </div>
 
