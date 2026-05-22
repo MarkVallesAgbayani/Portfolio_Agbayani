@@ -19,7 +19,7 @@ function Experience() {
             </h3>
 
             <p className="mt-1 text-sm text-neutral-400 sm:text-base">
-              Wizzard Technologies, Inc. · Internship
+              Wizzard Technologies, Inc. · OJT
             </p>
 
             <p className="text-sm text-neutral-500">
