@@ -1,5 +1,12 @@
 import { useState } from "react";
-
+import LeadProgrammer from "/src/assets/Best Lead Programmer.jpg";
+import BestResearch from "/src/assets/Best Research.jpg";
+import MostPromising from "/src/assets/Most Promising Thesis.jpg";
+import CodeFest from "/src/assets/CODEFEST.jpg";
+import Publication from "/src/assets/Publication.jpg";
+import SparkChange from "/src/assets/Spark-A Change.jpg";
+import Intermediate from "/src/assets/Intermediate SQL.jpg";
+import Introduction from "/src/assets/Introduction to SQL.jpg";
 function Certifications() {
   type Award = {
     id: number;
@@ -11,49 +18,49 @@ function Certifications() {
   const awards: Award[] = [
     {
       id: 1,
-      img: "/src/assets/Best Lead Programmer.jpg",
+      img: LeadProgrammer,
       title: "Best Lead Programmer",
       desc: "Recognized as Best Lead Programmer for leading the development of AiToManabi.",
     },
     {
       id: 2,
-      img: "/src/assets/Best Research.jpg",
+      img: BestResearch,
       title: "Best Research",
       desc: "Awarded for an outstanding undergraduate thesis.",
     },
     {
       id: 3,
-      img: "/src/assets/CODEFEST.jpg",
+      img: MostPromising,
       title: "Most Promising Thesis",
       desc: "Recognized for its innovation, technical implementation, and potential impact in enhancing language learning through AI.",
     },
     {
       id: 4,
-      img: "/src/assets/CODEFEST.jpg",
+      img: CodeFest,
       title: "CODEFEST - 1st Runner Up",
       desc: "Participated in a timed app development challenge requiring rapid planning, teamwork, and problem-solving.",
     },
     {
       id: 5,
-      img: "/src/assets/Publication.jpg",
+      img: Publication,
       title: "Publication - IJRISS",
       desc: "Evaluating the Effectiveness of AiToManabi: An AI-Powered Japanese Language Learning Management System Utilizing LLaMA 3.1 8B",
     },
     {
       id: 6,
-      img: "/src/assets/Publication.jpg",
+      img: SparkChange,
       title: "Spark-A-Change",
       desc: "A Pitching Competition Fueling MSMEs with Innovation (DOST)",
     },
     {
       id: 7,
-      img: "/src/assets/Intermediate SQL.jpg",
+      img: Intermediate,
       title: "Intermediate SQL",
       desc: "PostgreSQL Certification (DataCamp)",
     },
     {
       id: 8,
-      img: "/src/assets/Introduction to SQL.jpg",
+      img: Introduction,
       title: "Introduction to SQL",
       desc: "PostgreSQL Certification (DataCamp)",
     },

@@ -1,6 +1,7 @@
 import Vercel from "/src/assets/vercel.webp";
 import Cloudflare from "/src/assets/cloudflare.webp";
 import Netlify from "/src/assets/netlify.webp";
+import Hostinger from "/src/assets/hostinger.webp";
 
 export default function Deployment() {
   type Deployments = {
@@ -27,6 +28,12 @@ export default function Deployment() {
       title: "Netlify",
       image: Netlify,
       description: "All-in-one platform for deploying and managing web apps.",
+    },
+    {
+      id: 4,
+      title: "Hostinger",
+      image: Hostinger,
+      description: "From Shared Hosting and Domains to VPS and Cloud plans.",
     },
   ];
   return (
