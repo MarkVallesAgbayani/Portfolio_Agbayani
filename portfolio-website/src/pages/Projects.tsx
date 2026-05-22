@@ -34,7 +34,7 @@ function Projects() {
       description:
         "Designed and developed a responsive personal portfolio website to showcase projects, technical skills, and development experience. Includes modern UI animations, project highlights, contact sections, and optimized layouts for desktop and mobile devices.",
       image: Portfolio,
-      link: "https://aitomanabi.com/",
+      link: "https://agbayani-portfolio.markagbayanipersonal19.workers.dev/",
     },
   ];
   return (
