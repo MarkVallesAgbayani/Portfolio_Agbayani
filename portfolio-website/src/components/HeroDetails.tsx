@@ -2,7 +2,7 @@ function HeroDetails() {
   return (
     <div className="intro-hero mx-auto flex w-full max-w-4xl flex-col px-1 text-center sm:px-4">
       <h2 className="text-4xl font-bold uppercase text-white sm:text-5xl md:text-6xl">
-        Full-Stack
+        PERN Stack
       </h2>
       <p className="text-4xl font-bold uppercase text-zinc-800 sm:text-5xl md:text-6xl">
         Developer
